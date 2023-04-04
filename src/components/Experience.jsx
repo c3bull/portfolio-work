@@ -13,10 +13,10 @@ export default function Experience() {
                         <VerticalTimelineElement
                             key={key}
                             className="vertical-timeline-element--work"
-                            contentStyle={{background: '#707070', color: '#fff'}}
-                            contentArrowStyle={{borderRight: '7px solid  rgb(33, 150, 243)'}}
+                            contentStyle={{background: 'linear-gradient(#111827, rgba(255,0,0,0))', color: '#fff'}}
+                            contentArrowStyle={{borderRight: '7px solid #111827'}}
                             date={item.date}
-                            iconStyle={{background: '#1D1D1B', color: '#fff'}}
+                            iconStyle={{background: '#111827', color: '#fff'}}
                             icon={
                                 <div className='flex items-center justify-center w-full h-full'>
                                     <img

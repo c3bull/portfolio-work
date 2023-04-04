@@ -12,6 +12,7 @@ import posgrebg from "./stackbgs/posgrebg.png";
 import adobeilbg from "./stackbgs/adobeilbg.png";
 import photoshopbg from "./stackbgs/photoshopbg.png";
 import gimpbg from "./stackbgs/gimpbg.png";
+import aboutmeimg from "./aboutmeimg.png";
 
 export {
     reactbg,
@@ -28,4 +29,5 @@ export {
     adobeilbg,
     photoshopbg,
     gimpbg,
+    aboutmeimg,
 }

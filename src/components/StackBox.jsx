@@ -1,5 +1,3 @@
-import {stackFrontend} from "../data/data.js";
-
 export default function StackBox({data}) {
 
     return (
@@ -13,11 +11,14 @@ export default function StackBox({data}) {
                     <div className='h-full flex flex-1 flex-col gap-1'>
                         {item.content.map((item, key) => (
                             <div
-                                className={`bg-cover bg-center -top-3 flex flex-1 bg-blue-900 ${data[0].content.length === key + 1 && 'rounded-b-2xl'}`}
-                                style={{backgroundImage: `url(${item.backgroundImg})`}}
-                                key={key}
-                            >
-                                <p className='text-2xl text-white flex items-center justify-center w-full h-full'>{item.name}</p>
+                                className={`overflow-hidden flex flex-1 ${data[0].content.length === key + 1 && 'rounded-b-2xl'}`}>
+                                <div
+                                    className={`hover:scale-125 duration-300 bg-cover bg-center flex flex-1`}
+                                    style={{backgroundImage: `url(${item.backgroundImg})`}}
+                                    key={key}
+                                >
+                                    <p style={{textShadow: '#000 0px 0 5px'}} className='text-2xl text-white flex items-center justify-center w-full h-full drop-shadow-md'>{item.name}</p>
+                                </div>
                             </div>
                         ))}
                     </div>
