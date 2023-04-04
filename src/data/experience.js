@@ -1,4 +1,4 @@
-import {certificate, diploma, school} from "./assets/icons.js"
+import {certificate, diploma, school} from "../assets/icons.js"
 
 const experience = [
     {

@@ -1,11 +1,11 @@
 import {VerticalTimeline, VerticalTimelineElement} from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import experience from "../experience.js";
+import experience from "../data/experience.js";
 
 export default function Experience() {
 
     return (
-        <div className='bg-primary'>
+        <div className='bg-primary py-32'>
             <p className='text-center text-4xl text-white '>Moje doświadczenie</p>
             <VerticalTimeline>
                 {experience.map((item, key) => {
