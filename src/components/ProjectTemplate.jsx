@@ -16,13 +16,13 @@ export default function ProjectTemplate({id, image, title, github, demo, contrib
                         <img src={image} alt='project image'
                              className='h-full hover:scale-125 duration-300 hover:rotate-3 rounded'/>
                     </div>
-                    <div className='bg-white p-0.5 rounded-full absolute w-8 h-8 top-0 right-0 m-5'>
+                    <div className='hover:scale-110 duration-200 bg-white p-0.5 rounded-full absolute w-8 h-8 top-0 right-0 m-5'>
                         <a href={github} target="_blank">
                             <img src={githubImg} alt='github'/>
                         </a>
                     </div>
                     <div onClick={() => setShowModal(true)}
-                         className='cursor-pointer bg-white p-0.5 rounded-full absolute w-8 h-8 top-0 right-9 m-5'>
+                         className='hover:scale-110 duration-200 cursor-pointer bg-white p-0.5 rounded-full absolute w-8 h-8 top-0 right-9 m-5'>
                         <img src={eyeImg} alt='github'/>
                     </div>
                 </div>
