@@ -4,8 +4,9 @@ import StackBox from "./StackBox";
 export default function Stack() {
 
     return (
-        <div className='flex justify-center py-32 bg-primary'>
-            <div className='w-3/4 flex gap-14 justify-center'>
+        <div className='flex flex-col justify-center items-center w-full py-32 bg-primary'>
+            <p className='text-white text-center text-4xl pb-16'>Technologie, których używam</p>
+            <div className='w-2/3 flex gap-14 justify-center'>
                 <StackBox data={stackFrontend}/>
                 <StackBox data={stackBackend}/>
                 <StackBox data={stackGraphics}/>

@@ -5,8 +5,8 @@ export default function StackBox({data}) {
             {data.map((item, key) => (
                 <div key={key} className='h-[50vh]'>
                     <div
-                        className='bg-gradient-linear from-gray-900 to-transparent rounded-t-2xl h-24 flex items-center justify-center p-5 text-center text-2xl'>
-                        <p className='text-white'>{item.title}</p>
+                        className='bg-gradient-linear from-gray-900 to-transparent rounded-t-2xl h-24 w-full flex items-center justify-center p-5 text-center text-2xl'>
+                        <p className='text-white w-44'>{item.title}</p>
                     </div>
                     <div className='h-full flex flex-1 flex-col gap-1'>
                         {item.content.map((item, key) => (
