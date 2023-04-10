@@ -24,7 +24,7 @@ export default function About() {
 
     return (
         <div className='text-white flex flex-col justify-center items-center bg-primary w-full'>
-            <motion.p className='text-center text-4xl'
+            <motion.p className='uppercase font-semibold text-center text-4xl'
                       variants={textVariant()}
                       initial='hidden'
                       whileInView='show'

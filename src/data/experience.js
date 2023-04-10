@@ -9,6 +9,14 @@ const experience = [
         icon: diploma
     },
     {
+        date: "4.05.2022 - 4.11.2022",
+        title: "Praktyka zawodowa",
+        subtitle: "Kraków",
+        description: "Odbywanie praktyk w firmie Awesome Industries sp. z o.o.",
+        website: "https://awesome-ind.com/",
+        icon: school
+    },
+    {
         date: "2019-2023",
         title: "Studia informatyczne",
         subtitle: "Tarnów",

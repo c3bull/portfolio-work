@@ -6,7 +6,7 @@ import {motion} from "framer-motion";
 export default function Projects() {
     return (
         <div className='flex flex-col justify-center items-center w-full py-16 bg-primary'>
-            <motion.p className='text-white text-center text-4xl pb-16'
+            <motion.p className='uppercase font-semibold text-white text-center text-4xl pb-16'
                variants={textVariant()}
                initial='hidden'
                whileInView='show'

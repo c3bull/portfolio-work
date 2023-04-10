@@ -9,7 +9,7 @@ export default function Experience() {
     return (
         <div className='bg-primary py-32'>
             <motion.p
-                className='text-center text-4xl text-white '
+                className='uppercase font-semibold text-center text-4xl text-white pb-10'
                 variants={textVariant()}
                 initial='hidden'
                 whileInView='show'
@@ -41,6 +41,7 @@ export default function Experience() {
                             <p>
                                 {item.description}
                             </p>
+                            {item.website && <a href={item.website} target='_blank' className='text-violet-700'>{item.website}</a>}
                         </VerticalTimelineElement>
                     )
                 })}
