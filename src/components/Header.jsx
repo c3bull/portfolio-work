@@ -1,7 +1,9 @@
 import me from "../assets/me.png";
 import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
+import {loadFull} from "tsparticles";
 import {useCallback} from "react";
+import {mainbg} from '../assets/backgrounds.js'
+
 export default function Header() {
 
     const particlesInit = useCallback(async engine => {
@@ -23,7 +25,7 @@ export default function Header() {
                 init={particlesInit}
                 loaded={particlesLoaded}
                 options={{
-                    fullScreen: { enable: false },
+                    fullScreen: {enable: false},
                     fpsLimit: 120,
                     interactivity: {
                         events: {
@@ -96,15 +98,19 @@ export default function Header() {
                     detectRetina: true,
                 }}
             />
-            <div className='bg-primary w-full h-screen flex items-center justify-center'>
-                <div className='lg:w-3/4'>
+            <div className='bg-primary w-full h-screen flex items-center justify-center '>
+                <div className='lg:w-3/4 z-10'>
                     <div className='flex items-center justify-around'>
-                        <p className='text-white font-bold text-5xl'>Junior Frontend Developer</p>
+                        <p className='font-extrabold text-transparent text-7xl bg-clip-text bg-gradient-to-r from-violet-700 to-blue-500 '>Junior
+                            Frontend Developer</p>
                         <img
                             src={me}
+                            className='opacity-90 shadow-lg rounded-full shadow-violet-700'
                         />
                     </div>
                 </div>
+                <div className='w-full h-screen bg-main-bg bg-contain absolute opacity-[0.03] '/>
+                <div className='w-full h-screen bg-gradient-linear from-transparent to-primary absolute'/>
             </div>
         </div>
     )

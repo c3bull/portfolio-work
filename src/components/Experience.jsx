@@ -1,12 +1,22 @@
 import {VerticalTimeline, VerticalTimelineElement} from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import experience from "../data/experience.js";
+import {textVariant} from "../data/motion.js";
+import {motion} from "framer-motion";
 
 export default function Experience() {
 
     return (
         <div className='bg-primary py-32'>
-            <p className='text-center text-4xl text-white '>Moje doświadczenie</p>
+            <motion.p
+                className='text-center text-4xl text-white '
+                variants={textVariant()}
+                initial='hidden'
+                whileInView='show'
+                viewport={{once: true, amount: 0.25}}
+            >
+                Moje doświadczenie
+            </motion.p>
             <VerticalTimeline>
                 {experience.map((item, key) => {
                     return (

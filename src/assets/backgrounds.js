@@ -13,6 +13,7 @@ import adobeilbg from "./stackbgs/adobeilbg.png";
 import photoshopbg from "./stackbgs/photoshopbg.png";
 import gimpbg from "./stackbgs/gimpbg.png";
 import aboutmeimg from "./aboutmeimg.png";
+import mainbg from "./mainbg.png";
 
 export {
     reactbg,
@@ -30,4 +31,5 @@ export {
     photoshopbg,
     gimpbg,
     aboutmeimg,
+    mainbg,
 }

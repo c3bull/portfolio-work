@@ -2,13 +2,19 @@ import githubImg from "../assets/projects/github.png"
 import eyeImg from "../assets/projects/eye.png"
 import {useState} from "react";
 import ModalDemo from "./ModalDemo";
+import {motion} from "framer-motion";
+import {fadeIn} from "../data/motion.js";
 
-export default function ProjectTemplate({id, image, title, github, demo, contributors, description, hashtags}) {
+export default function ProjectTemplate({index, id, image, title, github, demo, contributors, description, hashtags}) {
     const [showModal, setShowModal] = useState(false)
-
     const handleOnClose = () => setShowModal(false)
     return (
-        <div className='p-0.5 bg-gradient-linear from-transparent to-gray-900 rounded-2xl'>
+        <motion.div className='p-0.5 bg-gradient-linear from-transparent to-gray-900 rounded-2xl shadow-md shadow-violet-700'
+                    variants={fadeIn("right", "spring", (index < 3 ? index * 0.2 : index * 0.2 - 0.6), 1.25)}
+            // variants={textVariant()}
+                    initial='hidden'
+                    whileInView='show'
+                    viewport={{once: true, amount: 0.25}}>
             <div key={id}
                  className='h-full text-white flex flex-col bg-gradient-linear from-gray-900 to-primary rounded-2xl overflow-hidden'>
                 <div className='relative'>
@@ -16,7 +22,8 @@ export default function ProjectTemplate({id, image, title, github, demo, contrib
                         <img src={image} alt='project image'
                              className='h-full hover:scale-125 duration-300 hover:rotate-3 rounded'/>
                     </div>
-                    <div className='hover:scale-110 duration-200 bg-white p-0.5 rounded-full absolute w-8 h-8 top-0 right-0 m-5'>
+                    <div
+                        className='hover:scale-110 duration-200 bg-white p-0.5 rounded-full absolute w-8 h-8 top-0 right-0 m-5'>
                         <a href={github} target="_blank">
                             <img src={githubImg} alt='github'/>
                         </a>
@@ -36,6 +43,6 @@ export default function ProjectTemplate({id, image, title, github, demo, contrib
                 <ModalDemo onClose={handleOnClose} visible={showModal} title={title} demo={demo}
                            contributors={contributors}/>
             </div>
-        </div>
+        </motion.div>
     )
 }
