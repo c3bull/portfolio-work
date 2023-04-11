@@ -5,9 +5,9 @@ import {motion} from "framer-motion";
 
 export default function Projects() {
     return (
-        <div className='flex flex-col justify-center items-center w-full py-16 bg-primary'>
+        <div className='flex flex-col justify-center items-center w-full py-12 bg-primary'>
             <motion.p className='uppercase font-semibold text-white text-center text-4xl pb-16'
-               variants={textVariant()}
+               variants={textVariant(0.25)}
                initial='hidden'
                whileInView='show'
                viewport={{once: true, amount: 0.25}}>Projekty</motion.p>

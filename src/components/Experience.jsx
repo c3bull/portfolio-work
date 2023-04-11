@@ -7,10 +7,10 @@ import {motion} from "framer-motion";
 export default function Experience() {
 
     return (
-        <div className='bg-primary py-32'>
+        <div className='bg-primary py-12'>
             <motion.p
                 className='uppercase font-semibold text-center text-4xl text-white pb-10'
-                variants={textVariant()}
+                variants={textVariant(0.25)}
                 initial='hidden'
                 whileInView='show'
                 viewport={{once: true, amount: 0.25}}
@@ -39,9 +39,8 @@ export default function Experience() {
                             <h3 className="vertical-timeline-element-title">{item.title}</h3>
                             <h4 className="vertical-timeline-element-subtitle">{item.subtitle}</h4>
                             <p>
-                                {item.description}
+                                {item.description} {item.website && <a href={item.website} target='_blank' className='text-violet-700'>{item.website}</a>}
                             </p>
-                            {item.website && <a href={item.website} target='_blank' className='text-violet-700'>{item.website}</a>}
                         </VerticalTimelineElement>
                     )
                 })}
