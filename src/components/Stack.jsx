@@ -12,7 +12,7 @@ export default function Stack() {
                initial='hidden'
                whileInView='show'
                viewport={{once: true, amount: 0.25}}>Technologie</motion.p>
-            <div className='w-2/3 flex gap-14 justify-center'>
+            <div className='w-2/3 flex flex-col lg:flex-row gap-14 justify-center'>
                 <StackBox data={stackFrontend}/>
                 <StackBox data={stackBackend}/>
                 <StackBox data={stackGraphics}/>

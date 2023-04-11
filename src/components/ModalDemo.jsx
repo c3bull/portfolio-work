@@ -21,7 +21,7 @@ export default function ModalDemo({visible, onClose, title, demo, contributors})
                 {contributors && <div>
                     <p className='text-xl'>Contributors:</p>
                     {contributors.map((contributor, index) => (
-                    <div>
+                    <div key={index}>
                         <a
                             target="_blank"
                             href={contributor.github}

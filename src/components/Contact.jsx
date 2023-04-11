@@ -1,6 +1,6 @@
 import ContactWays from "./ContactWays.jsx";
 import React from 'react';
-import {MdOutgoingMail, steam} from '../assets/icons.js'
+import {MdOutgoingMail} from '../assets/icons.js'
 import {fadeIn, textVariant} from "../data/motion.js";
 import {motion} from "framer-motion";
 import linkedinImg from "../assets/projects/linkedin.png"
@@ -19,7 +19,7 @@ export default function Contact() {
             >
                 Kontakt
             </motion.p>
-            <motion.div className='hidden max-w-2xl flex-col gap-6 sm:flex sm:w-2/3 z-10'
+            <motion.div className='max-w-2xl flex-col gap-6 flex w-4/5 lg:w-2/3 z-10'
                  variants={fadeIn("up", "spring", 0, 1.25)}
                  initial='hidden'
                  whileInView='show'
@@ -35,9 +35,8 @@ export default function Contact() {
                     name='jakub.cebula9@gmail.com'
                     icon={<div className='flex items-center p-0.5'>
                         <img
+                            className='w-12 h-12 lg:h-10 lg:w-10 p-0.5'
                             src={MdOutgoingMail}
-                            width='30px'
-                            height='30px'
                             alt='wyślij email'
                         />
                     </div>}
@@ -46,13 +45,11 @@ export default function Contact() {
                 <ContactWays
                     href='https://www.linkedin.com/in/cebula-jakub/'
                     title='LinkedIn'
-                    link='https://www.linkedin.com/in/cebula-jakub/'
+                    link='/in/cebula-jakub/'
                     icon={<div className='flex items-center p-0.5'>
                         <img
-                            className='rounded-full'
+                            className='rounded-full w-12 h-12 lg:h-10 lg:w-10'
                             src={linkedinImg}
-                            width='30px'
-                            height='30px'
                             alt='zadzwoń'
                         />
                     </div>}
@@ -61,13 +58,11 @@ export default function Contact() {
                 <ContactWays
                     href='https://github.com/c3bull'
                     title='Github'
-                    link='https://github.com/c3bull'
+                    link='/c3bull'
                     icon={<div className='flex items-center p-0.5'>
                         <img
-                            className='bg-white rounded-full p-0.5'
+                            className='bg-white rounded-full p-0.5 w-12 h-12 lg:h-10 lg:w-10'
                             src={githubImg}
-                            width='30px'
-                            height='30px'
                             alt='zadzwoń'
                         />
                     </div>}

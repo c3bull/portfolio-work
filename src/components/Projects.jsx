@@ -12,9 +12,10 @@ export default function Projects() {
                whileInView='show'
                viewport={{once: true, amount: 0.25}}>Projekty</motion.p>
             <div className='w-2/3'>
-                <div className='grid grid-cols-[repeat(3,1fr)] gap-6 w-full'>
+                <div className='flex flex-col lg:grid grid-cols-[repeat(3,1fr)] gap-6 w-full'>
                     {portfolioJson.map(({id, image, title, github, demo, contributors, description, hashtags}, index) => (
                         <ProjectTemplate
+                            key={index}
                             index={index}
                             title={title}
                             demo={demo}

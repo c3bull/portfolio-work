@@ -15,6 +15,8 @@ module.exports = {
             'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
             'gradient-linear': 'linear-gradient(var(--tw-gradient-stops))',
             'gradient-to-r': 'linear-gradient(to right, var(--tw-gradient-stops))',
+            'gradient-to-b': 'linear-gradient(to bottom, var(--tw-gradient-stops))',
+            'gradient-to-t': 'linear-gradient(to top, var(--tw-gradient-stops))',
             'main-bg': "url('./src/assets/mainbg.png')",
         }
     },

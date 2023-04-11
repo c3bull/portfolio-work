@@ -9,18 +9,18 @@ export default function ProjectTemplate({index, id, image, title, github, demo, 
     const [showModal, setShowModal] = useState(false)
     const handleOnClose = () => setShowModal(false)
     return (
-        <motion.div className='p-0.5 bg-gradient-linear from-transparent to-gray-900 rounded-2xl shadow-md shadow-violet-700'
-                    variants={fadeIn("right", "spring", (index < 3 ? index * 0.2 : index * 0.2 - 0.6), 1.25)}
-            // variants={textVariant()}
-                    initial='hidden'
-                    whileInView='show'
-                    viewport={{once: true, amount: 0.25}}>
+        <motion.div
+            className='p-0.5 bg-gradient-linear from-transparent to-gray-900 rounded-2xl shadow-md shadow-violet-700'
+            variants={fadeIn("right", "spring", (index < 3 ? index * 0.2 : index * 0.2 - 0.6), 1.25)}
+            initial='hidden'
+            whileInView='show'
+            viewport={{once: true, amount: 0.25}}>
             <div key={id}
                  className='h-full text-white flex flex-col bg-gradient-linear from-gray-900 to-primary rounded-2xl overflow-hidden'>
                 <div className='relative'>
                     <div className='m-4 rounded-xl overflow-hidden'>
                         <img src={image} alt='project image'
-                             className='h-full hover:scale-125 duration-300 hover:rotate-3 rounded'/>
+                             className='h-full w-full hover:scale-125 duration-300 hover:rotate-3 rounded'/>
                     </div>
                     <div
                         className='hover:scale-110 duration-200 bg-white p-0.5 rounded-full absolute w-8 h-8 top-0 right-0 m-5'>
