@@ -5,7 +5,7 @@ import {MdOutgoingMail, linkedin, github} from '../assets/icons.js'
 export default function Footer() {
 
     return (
-        <div className='border-t border-gray-900'>
+        <div className='border-t border-gray-600'>
             <div className='bg-primary w-full min-h-[50vh] flex justify-center items-center py-10'>
                 <div className='w-3/4 lg:w-3/4 z-10'>
                     <div

@@ -1,4 +1,3 @@
-import {certificate, diploma, school} from "../assets/icons.js"
 import {reactbg, nextjsbg, tailwindbg, cssbg, htmlbg, jsbg, tsbg, graphqlbg, nodejsbg, mongodbbg, posgrebg, adobeilbg, photoshopbg, gimpbg} from "../assets/backgrounds.js"
 
 const stackFrontend = [
@@ -85,5 +84,31 @@ const stackGraphics = [
     },
 ]
 
+const navLinks = [
+    {
+        id: "strona-glowna",
+        title: "Strona główna",
+    },
+    {
+        id: "o-mnie",
+        title: "O mnie",
+    },
+    {
+        id: "technologie",
+        title: "Technologie",
+    },
+    {
+        id: "projekty",
+        title: "Projekty",
+    },
+    {
+        id: "doswiadczenie",
+        title: "Doświadczenie",
+    },
+    {
+        id: "kontakt",
+        title: "Kontakt",
+    },
+];
 
-export {stackFrontend, stackBackend, stackGraphics}
+export {stackFrontend, stackBackend, stackGraphics, navLinks}

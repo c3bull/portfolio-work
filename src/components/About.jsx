@@ -34,7 +34,7 @@ export default function About() {
                 <div
                     className='absolute w-full h-full z-10 bg-gradient-linear from-[#0b0d0f] via-transparent to-[#0b0d0f]'/>
                 <img src={aboutmeimg} alt="bgimg"
-                     className={`relative h-full w-auto object-cover top-0 left-0 ${scrollTop >= 650 ? 'opacity-100' : 'opacity-30'} duration-200`}
+                     className={`relative h-full w-auto lg:w-screen object-cover top-0 left-0 ${scrollTop >= 650 ? 'opacity-100' : 'opacity-30'} duration-200`}
                 />
                 <div className='overflow-hidden flex justify-around w-full top-2 lg:top-10 left-0 right-0 mx-auto absolute z-20'>
                     <img src={flair} alt="spotlight"
