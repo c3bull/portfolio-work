@@ -5,14 +5,14 @@ import {motion} from "framer-motion";
 
 export default function Projects() {
     return (
-        <div className='flex flex-col justify-center items-center w-full py-12 bg-primary'>
+        <section id='projekty' className='flex flex-col justify-center items-center w-full py-12 bg-primary'>
             <motion.p className='uppercase font-semibold text-white text-center text-4xl pb-16'
                variants={textVariant(0.25)}
                initial='hidden'
                whileInView='show'
                viewport={{once: true, amount: 0.25}}>Projekty</motion.p>
             <div className='w-2/3'>
-                <div className='flex flex-col lg:grid grid-cols-[repeat(3,1fr)] gap-6 w-full'>
+                <div className='flex flex-col md:grid md:grid-cols-[repeat(2,1fr)] lg:grid-cols-[repeat(3,1fr)] gap-6 w-full'>
                     {portfolioJson.map(({id, image, title, github, demo, contributors, description, hashtags}, index) => (
                         <ProjectTemplate
                             key={index}
@@ -28,6 +28,6 @@ export default function Projects() {
                     ))}
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

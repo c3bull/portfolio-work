@@ -9,7 +9,7 @@ import Stars from "./Stars.jsx";
 
 export default function Contact() {
     return (
-        <div className='h-[80vh] relative bg-primary flex flex-col items-center justify-center py-12'>
+        <section id='kontakt' className='h-[80vh] relative bg-primary flex flex-col items-center justify-center py-12'>
             <motion.p
                 className='uppercase font-semibold text-center text-4xl text-white pb-10'
                 variants={textVariant(0.25)}
@@ -24,7 +24,7 @@ export default function Contact() {
                  initial='hidden'
                  whileInView='show'
                  viewport={{once: true, amount: 0.25}}>
-                <p className='text-center font-medium uppercase text-white'>
+                <p className='md:hidden text-center font-medium uppercase text-white'>
                     Kliknij na odpowiednią ikonę, aby przejść do interesującej cię formy
                     kontaktu.
                 </p>
@@ -69,6 +69,6 @@ export default function Contact() {
                 />
             </motion.div>
             <Stars/>
-        </div>
+        </section>
     );
 };

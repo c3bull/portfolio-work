@@ -7,7 +7,7 @@ import {motion} from "framer-motion";
 export default function Experience() {
 
     return (
-        <div className='bg-primary py-12'>
+        <section id='doswiadczenie' className='bg-primary py-12'>
             <motion.p
                 className='uppercase font-semibold text-center text-4xl text-white pb-10'
                 variants={textVariant(0.25)}
@@ -54,6 +54,6 @@ export default function Experience() {
 
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

@@ -3,6 +3,8 @@ import diploma from "./diploma.png";
 import school from "./school.png";
 import MdOutgoingMail from "./icons/MdOutgoingMail.png";
 import steam from "./icons/steam.png";
+import linkedin from "./projects/linkedin.png";
+import github from "./projects/github.png";
 
 export {
     certificate,
@@ -10,4 +12,6 @@ export {
     school,
     MdOutgoingMail,
     steam,
+    linkedin,
+    github,
 }

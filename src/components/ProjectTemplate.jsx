@@ -11,7 +11,10 @@ export default function ProjectTemplate({index, id, image, title, github, demo, 
     return (
         <motion.div
             className='p-0.5 bg-gradient-linear from-transparent to-gray-900 rounded-2xl shadow-md shadow-violet-700'
-            variants={fadeIn("right", "spring", (index < 3 ? index * 0.2 : index * 0.2 - 0.6), 1.25)}
+            variants={window.matchMedia('(min-width: 1024px)').matches ?
+                fadeIn("right", "spring", (index < 3 ? index * 0.2 : index * 0.2 - 0.6), 1.25) :
+                fadeIn("right", "spring", 0, 1.25)
+            }
             initial='hidden'
             whileInView='show'
             viewport={{once: true, amount: 0.25}}>

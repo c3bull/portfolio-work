@@ -6,7 +6,7 @@ import {motion} from "framer-motion";
 export default function Stack() {
 
     return (
-        <div className='flex flex-col justify-center items-center w-full py-12 bg-primary'>
+        <section id='technologie' className='flex flex-col justify-center items-center w-full py-12 bg-primary'>
             <motion.p className='uppercase font-semibold text-white text-center text-4xl pb-16'
                variants={textVariant(0.25)}
                initial='hidden'
@@ -17,6 +17,6 @@ export default function Stack() {
                 <StackBox data={stackBackend}/>
                 <StackBox data={stackGraphics}/>
             </div>
-        </div>
+        </section>
     )
 }

@@ -16,7 +16,7 @@ export default function Header() {
     }, []);
 
     return (
-        <div>
+        <section id='strona-glowna'>
             <Particles
                 id="tsparticles"
                 init={particlesInit}
@@ -115,6 +115,6 @@ export default function Header() {
                 <div className='w-full h-screen bg-main-bg bg-contain absolute opacity-[0.03] '/>
                 <div className='w-full h-screen bg-gradient-linear from-transparent to-primary absolute'/>
             </div>
-        </div>
+        </section>
     )
 }

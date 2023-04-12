@@ -23,7 +23,7 @@ export default function About() {
     }, []);
 
     return (
-        <div className='h-screen lg:h-auto text-white flex flex-col justify-center items-center bg-primary w-full py-12'>
+        <section id='o-mnie' className='h-screen lg:h-auto text-white flex flex-col justify-center items-center bg-primary w-full py-12'>
             <motion.p className='uppercase font-semibold text-center text-4xl'
                       variants={textVariant(0.25)}
                       initial='hidden'
@@ -67,6 +67,6 @@ export default function About() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
