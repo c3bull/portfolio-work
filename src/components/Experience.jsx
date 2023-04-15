@@ -17,7 +17,7 @@ export default function Experience() {
             >
                 Moje doświadczenie
             </motion.p>
-            <div className='flex justify-center'>
+            <div className='flex justify-center overflow-hidden'>
                 <div className='w-3/4 lg:w-full'>
                     <VerticalTimeline>
                         {experience.map((item, key) => {
