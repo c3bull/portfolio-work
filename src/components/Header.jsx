@@ -121,8 +121,8 @@ export default function Header() {
                         />
                     </div>
                 </div>
-                <div className='w-full h-screen bg-main-bg bg-contain absolute opacity-[0.03] '/>
-                <div className='w-full h-screen bg-gradient-linear from-transparent to-primary absolute'/>
+                <div className='w-full h-screen bg-main-bg bg-contain absolute opacity-[0.03]' />
+                <div className='w-full h-screen bg-gradient-linear from-transparent to-primary absolute' />
             </div>
         </section>
     )
