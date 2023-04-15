@@ -54,7 +54,7 @@ export default function About() {
                 </div>
 
                 <div
-                    className='flex justify-center gap-10 w-fit p-10 bottom-5 md:bottom-1/4 lg:bottom-12 xl:bottom-24 left-0 right-0 mx-auto absolute z-20'>
+                    className='hidden md:flex justify-center gap-10 w-fit p-10 bottom-5 md:bottom-1/4 lg:bottom-12 xl:bottom-24 left-0 right-0 mx-auto absolute z-20'>
                     <div className='bg-white p-0.5 rounded-full w-24 h-24 xl:w-32 xl:h-32 hover:opacity-70 duration-200'>
                         <a href="https://github.com/c3bull" target="_blank">
                             <img src={githubImg} alt='github'/>

@@ -42,11 +42,11 @@ export default function Projects() {
                 </div>
             </div>
             <div
-                className='background-animate bg-gradient-radial from-violet-700/30 to-primary to-60% md:absolute top-0 right-0 scale-75 lg:scale-100'>
+                className='hidden background-animate bg-gradient-radial from-violet-700/30 to-primary to-60% md:absolute top-0 right-0 scale-75 lg:scale-100'>
                 <img src={hexside} alt='threehex'/>
             </div>
             <div
-                className='background-animate bg-gradient-radial from-violet-700/30 to-primary to-60% md:absolute top-0 left-0 scale-75 lg:scale-100'>
+                className='hidden background-animate bg-gradient-radial from-violet-700/30 to-primary to-60% md:absolute top-0 left-0 scale-75 lg:scale-100'>
                 <img src={hexside} alt='threehex'/>
             </div>
         </section>

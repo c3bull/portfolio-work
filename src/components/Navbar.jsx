@@ -20,7 +20,7 @@ export default function Navbar() {
 
     return (
         <nav
-            className={`${toggle && 'bg-secondary'} px-10 w-full flex items-center h-24 fixed top-0 z-30 border-b border-b-gray-600 ${scrollTop <= 10 ? 'bg-secondary/0' : 'bg-secondary/100'} duration-500`}>
+            className={`${toggle && 'bg-secondary'} px-10 w-full flex items-center h-24 fixed top-0 z-30 border-b border-b-gray-600 ${scrollTop >= 10 && 'bg-secondary/100'} duration-500`}>
             <div className='w-full flex justify-between items-center h-full md:pt-9 max-w-7xl mx-auto'>
                 <ul className='list-none hidden md:flex flex-row gap-7 lg:gap-10 justify-center h-full w-full'>
                     {navLinks.map((link) => (
@@ -30,16 +30,16 @@ export default function Navbar() {
                         </li>
                     ))}
                 </ul>
-                <div className='uppercase md:hidden flex flex-1 h-full justify-center items-center'>
+                <div className='uppercase md:hidden flex flex-1 h-full justify-end items-center'>
                     <img
                         src={toggle ? close : menu}
                         alt='menu'
                         className='w-[28px] h-[28px] object-contain cursor-pointer'
                         onClick={() => setToggle(!toggle)}
                     />
-                    <div className={`${!toggle ? 'hidden' : 'flex'} p-6 top-20 mx-4 my-2 
-                     absolute min-w-[140px] z-10 rounded-b-3xl ${toggle && 'bg-gradient-to-b from-secondary to-gray-900'}  w-full duration-500`}>
-                        <ul className='w-full list-none flex justify-end items-center flex-col gap-4'>
+                    <div className={`${!toggle ? 'hidden' : 'flex'} p-6 top-20 left-0
+                     absolute min-w-[140px] z-10 rounded-b-3xl ${toggle && 'bg-gradient-to-b from-secondary to-gray-900'} w-full duration-500`}>
+                        <ul className='w-screen list-none flex justify-end items-center flex-col gap-4'>
                             {navLinks.map((link) => (
                                 <li key={link.id}
                                     className='w-full text-center text-white font-poppins font-medium cursor-pointer text-[16px]'
