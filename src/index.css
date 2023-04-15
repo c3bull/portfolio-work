@@ -83,3 +83,19 @@ button:focus-visible {
   transform: scaleX(1.4);
   transform-origin: center;
 }
+
+.background-animate {
+  -webkit-animation: AnimationName 2s ease infinite;
+  -moz-animation: AnimationName 2s ease infinite;
+  animation: AnimationName 2s ease infinite;
+}
+
+@keyframes AnimationName {
+  0%,
+  100% {
+    opacity: 30%;
+  }
+  50% {
+    opacity: 100%;
+  }
+}

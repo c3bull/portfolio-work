@@ -7,12 +7,21 @@ import {
     moviesDbDemo,
     onSteroids,
     onSteroidsDemo,
-    sendCastle,
     quiz,
-    quizDemo
+    quizDemo,
+    syklykbis,
 } from "../assets/portfolioImages.js"
 
 const portfolioJson = [
+    {
+        id: 0,
+        image: syklykbis,
+        title: 'Syk Łyk Bis',
+        github: 'https://github.com/c3bull/syklykbis-taw',
+        demo: 'https://user-images.githubusercontent.com/80101130/224050463-6afc05dc-aaff-4fa3-a494-7cf8871583c6.gif',
+        description: "Sklep internetowy dystrybutora soków, napoi i wody",
+        hashtags: "React.js, Node.js, JavaScript, TalwindCSS, GraphQL, MongoDB",
+    },
     {
         id: 1,
         image: chirper,
@@ -84,29 +93,6 @@ const portfolioJson = [
     },
     {
         id: 5,
-        image: sendCastle,
-        title: 'SendCastle',
-        github: 'https://github.com',
-        demo: sendCastle,
-        description: "Komunikator między użytkownikami",
-        hashtags: "React Native, JavaScript",
-        contributors: [
-            {
-                github: "https://github.com/Axel2026"
-            },
-            {
-                github: "https://github.com/HathreN"
-            },
-            {
-                github: "https://github.com/p-t-k1"
-            },
-            {
-                github: "https://github.com/pkielbasa"
-            },
-        ]
-    },
-    {
-        id: 6,
         image: quiz,
         title: 'Quiz',
         github: 'https://github.com',

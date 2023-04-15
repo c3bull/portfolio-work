@@ -9,6 +9,7 @@ import onSteroidsDemo from "./projects/portfolio4-demo.png"
 import sendCastle from "./projects/portfolio5.jpg"
 import quiz from "./projects/portfolio6.jpg"
 import quizDemo from "./projects/portfolio6-demo.png"
+import syklykbis from "./projects/portfolio7.jpg"
 
 export {
     chirper,
@@ -22,4 +23,5 @@ export {
     sendCastle,
     quiz,
     quizDemo,
+    syklykbis,
 }

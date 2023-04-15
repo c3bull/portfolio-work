@@ -14,6 +14,8 @@ import photoshopbg from "./stackbgs/photoshopbg.png";
 import gimpbg from "./stackbgs/gimpbg.png";
 import aboutmeimg from "./aboutmeimg.png";
 import mainbg from "./mainbg.png";
+import threehex from "./threehex.png";
+import hexside from "./hexside.png";
 
 export {
     reactbg,
@@ -32,4 +34,6 @@ export {
     gimpbg,
     aboutmeimg,
     mainbg,
+    threehex,
+    hexside,
 }

@@ -45,7 +45,7 @@ export default function Experience() {
                                     <h4 className="vertical-timeline-element-subtitle">{item.subtitle}</h4>
                                     <p>
                                         {item.description} {item.website && <a href={item.website} target='_blank'
-                                                                               className='text-violet-700'>{item.website}</a>}
+                                                                               className='text-gray-400 hover:text-violet-700 duration-200'>{item.website}</a>}
                                     </p>
                                 </VerticalTimelineElement>
                             )

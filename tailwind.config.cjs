@@ -18,6 +18,8 @@ module.exports = {
             'gradient-to-b': 'linear-gradient(to bottom, var(--tw-gradient-stops))',
             'gradient-to-t': 'linear-gradient(to top, var(--tw-gradient-stops))',
             'main-bg': "url('./src/assets/mainbg.png')",
+            'hex-bg': "url('./src/assets/hexbg.png')",
+            'three-hex': "url('./src/assets/threehex.png')",
         }
     },
     plugins: [],
