@@ -1,11 +1,12 @@
 import {textVariant} from "../data/motion.js";
 import {motion} from "framer-motion";
 import {MdOutgoingMail, linkedin, github} from '../assets/icons.js'
+import {hexbg} from "../assets/backgrounds.js";
 
 export default function Footer() {
 
     return (
-        <div className='border-t border-gray-600'>
+        <div className='border-t border-gray-600 relative'>
             <div className='bg-primary w-full min-h-[50vh] flex justify-center items-center py-10'>
                 <div className='w-3/4 lg:w-3/4 z-10'>
                     <div
@@ -59,8 +60,12 @@ export default function Footer() {
                     </div>
                     <p className='pt-10 text-gray-500 text-center lg:text-start'>© Jakub Cebula • 2023</p>
                 </div>
-                <div className='w-full h-[50vh] bg-main-bg bg-contain absolute opacity-[0.01] '/>
-                <div className='w-full h-[50vh] bg-gradient-linear from-primary to-transparent absolute'/>
+                {/*<div className='w-full h-[50vh] bg-main-bg bg-contain absolute opacity-[0.01] '/>*/}
+                {/*<div className='w-full h-[50vh] bg-gradient-linear from-primary to-transparent absolute'/>*/}
+                <div
+                    className='w-full h-full bg-gradient-linear from-primary  to-violet-700/5 absolute top-0 left-0 overflow-hidden'>
+                    <img src={hexbg} alt='threehex' className='max-w-none'/>
+                </div>
             </div>
         </div>
     )

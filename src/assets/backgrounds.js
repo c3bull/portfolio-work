@@ -16,6 +16,7 @@ import aboutmeimg from "./aboutmeimg.png";
 import mainbg from "./mainbg.png";
 import threehex from "./threehex.png";
 import hexside from "./hexside.png";
+import hexbg from "./hexbg.png";
 
 export {
     reactbg,
@@ -36,4 +37,5 @@ export {
     mainbg,
     threehex,
     hexside,
+    hexbg,
 }
