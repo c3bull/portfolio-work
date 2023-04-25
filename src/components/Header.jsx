@@ -13,7 +13,7 @@ export default function Header() {
     }, []);
 
     const particlesLoaded = useCallback(async container => {
-        await console.log(container);
+        // await console.log(container);
     }, []);
 
     return (
