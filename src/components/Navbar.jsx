@@ -22,7 +22,7 @@ export default function Navbar() {
 
     return (
         <nav
-            className={`${toggle && 'bg-secondary'} hover:bg-secondary w-full flex items-center h-24 fixed top-0 z-30 border-b border-b-gray-600 ${scrollTop >= 10 && 'bg-secondary/100'} duration-300`}>
+            className={`${toggle && 'bg-secondary'} hover:bg-secondary w-full flex items-center h-24 fixed top-0 z-30 border-b-2 border-b-gray-600 ${scrollTop >= 10 && 'bg-secondary/100'} duration-300`}>
             <div className='w-full flex justify-between items-center h-full md:pt-9 max-w-7xl mx-auto'>
                 <ul className='list-none hidden md:flex flex-row gap-7 lg:gap-10 justify-center h-full w-full'>
                     {navLinks.map((link) => (
