@@ -57,8 +57,7 @@ export default function Navbar() {
                 </div>
             </div>
             <span style={{transform: `translateX(${completion - 100}%`}}
-                  className='absolute bg-gray-500 h-0.5 w-full -bottom-0.5'/>
-
+                  className='absolute bg-violet-400 h-0.5 w-full -bottom-0.5'/>
         </nav>
     )
 }
