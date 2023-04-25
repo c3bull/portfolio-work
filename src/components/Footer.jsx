@@ -23,15 +23,21 @@ export default function Footer() {
                             <div className='text-white flex flex-col gap-2 items-center md:items-start'>
                                 <div className='flex items-center gap-1'>
                                     <img className='w-5 h-5' src={MdOutgoingMail} alt='email'/>
-                                    <p>jakub.cebula9@gmail.com</p>
+                                    <p className='text-white hover:underline hover:text-white'>
+                                        <a href='mailto:jakub.cebula9@gmail.com' target='_blank'>jakub.cebula9@gmail.com</a>
+                                    </p>
                                 </div>
                                 <div className='flex items-center gap-1'>
                                     <img className='w-5 h-5' src={linkedin} alt='email'/>
-                                    <p>LinkedIn</p>
+                                    <p className='text-white hover:underline hover:text-white'>
+                                        <a href='https://www.linkedin.com/in/cebula-jakub/' target='_blank'>LinkedIn</a>
+                                    </p>
                                 </div>
                                 <div className='flex items-center gap-1'>
                                     <img className='w-5 h-5 bg-white rounded-full p-0.5' src={github} alt='email'/>
-                                    <p>Github</p>
+                                    <p className='text-white hover:underline hover:text-white'>
+                                        <a href='https://github.com/c3bull' target='_blank'>Github</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -60,8 +66,6 @@ export default function Footer() {
                     </div>
                     <p className='pt-10 text-gray-500 text-center lg:text-start'>© Jakub Cebula • 2023</p>
                 </div>
-                {/*<div className='w-full h-[50vh] bg-main-bg bg-contain absolute opacity-[0.01] '/>*/}
-                {/*<div className='w-full h-[50vh] bg-gradient-linear from-primary to-transparent absolute'/>*/}
                 <div
                     className='w-full h-full bg-gradient-linear from-primary  to-violet-700/5 absolute top-0 left-0 overflow-hidden'>
                     <img src={hexbg} alt='threehex' className='max-w-none'/>
