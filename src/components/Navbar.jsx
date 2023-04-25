@@ -7,7 +7,7 @@ export default function Navbar() {
     const [toggle, setToggle] = useState(false)
     const [scrollTop, setScrollTop] = useState(0);
     const completion = useReadingProgress()
-    console.log(completion)
+
     useEffect(() => {
         const handleScroll = () => {
             setScrollTop(window.scrollY);
