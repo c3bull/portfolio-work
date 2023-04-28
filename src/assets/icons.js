@@ -7,6 +7,7 @@ import linkedin from "./projects/linkedin.png";
 import github from "./projects/github.png";
 import close from '../assets/icons/close.svg'
 import menu from '../assets/icons/menu.svg'
+import spinner from '../assets/icons/spinner.png'
 export {
     certificate,
     diploma,
@@ -17,4 +18,5 @@ export {
     github,
     close,
     menu,
+    spinner,
 }

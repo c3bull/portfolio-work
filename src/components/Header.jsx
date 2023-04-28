@@ -1,101 +1,12 @@
 import me from "../assets/me.png";
-import Particles from "react-tsparticles";
-import {loadFull} from "tsparticles";
-import {useCallback} from "react";
 import {textVariant} from "../data/motion.js";
 import {motion} from "framer-motion";
 import {hexbg} from "../assets/backgrounds.js";
 
 export default function Header() {
 
-    const particlesInit = useCallback(async engine => {
-        await loadFull(engine);
-    }, []);
-
-    const particlesLoaded = useCallback(async container => {
-        // await console.log(container);
-    }, []);
-
     return (
         <section id='strona-glowna' className='overflow-hidden'>
-            <Particles
-                id="tsparticles"
-                init={particlesInit}
-                loaded={particlesLoaded}
-                options={{
-                    fullScreen: {enable: false},
-                    fpsLimit: 120,
-                    interactivity: {
-                        events: {
-                            onClick: {
-                                // enable: true,
-                                mode: "push",
-                            },
-                            onHover: {
-                                enable: true,
-                                mode: "repulse",
-                            },
-                            resize: true,
-                        },
-                        modes: {
-                            bubble: {
-                                distance: 400,
-                                duration: 2,
-                                opacity: 0.8,
-                                size: 40,
-                            },
-                            push: {
-                                quantity: 10,
-                            },
-                            repulse: {
-                                distance: 50,
-                                duration: 0.4,
-                            },
-                        },
-                    },
-                    particles: {
-                        color: {
-                            value: "#FFFFFF",
-                        },
-                        links: {
-                            color: "#ffffff",
-                            distance: 150,
-                            enable: true,
-                            opacity: 0.5,
-                            width: 1,
-                        },
-                        collisions: {
-                            enable: true,
-                        },
-                        move: {
-                            direction: "none",
-                            enable: true,
-                            outMode: "bounce",
-                            random: false,
-                            speed: 2,
-                            straight: false,
-                        },
-                        number: {
-                            density: {
-                                enable: true,
-                                area: 2500,
-                            },
-                            value: 80,
-                        },
-                        opacity: {
-                            value: 0.5,
-                        },
-                        shape: {
-                            type: "circle",
-                        },
-                        size: {
-                            random: true,
-                            value: 5,
-                        },
-                    },
-                    detectRetina: true,
-                }}
-            />
             <div className='bg-primary w-full h-screen flex items-center justify-center overflow-hidden'>
                 <div className='w-3/4 lg:w-3/4 z-10'>
                     <div className='flex flex-col-reverse lg:flex-row gap-14 md:gap-28 items-center justify-around'>

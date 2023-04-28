@@ -9,6 +9,14 @@ const experience = [
         icon: diploma
     },
     {
+        date: "18.02.2023 - obecnie",
+        title: "Kurs",
+        subtitle: "Online, Żak",
+        description: "Udział w kursie Social Media Manager, odbywający się w wybrane weekendy",
+        website: "https://zak.edu.pl/",
+        icon: school
+    },
+    {
         date: "4.05.2022 - 4.11.2022",
         title: "Praktyka zawodowa",
         subtitle: "Kraków",
