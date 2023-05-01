@@ -8,6 +8,8 @@ import github from "./projects/github.png";
 import close from '../assets/icons/close.svg'
 import menu from '../assets/icons/menu.svg'
 import spinner from '../assets/icons/spinner.png'
+import plflag from '../assets/icons/polish-flag.png'
+import engflag from '../assets/icons/english-flag.png'
 export {
     certificate,
     diploma,
@@ -19,4 +21,6 @@ export {
     close,
     menu,
     spinner,
+    plflag,
+    engflag,
 }
