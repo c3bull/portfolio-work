@@ -87,27 +87,27 @@ const stackGraphics = [
 const navLinks = [
     {
         id: "strona-glowna",
-        navbarTitle: "home",
+        title: "home",
     },
     {
         id: "o-mnie",
-        navbarTitle: "about",
+        title: "about",
     },
     {
         id: "technologie",
-        navbarTitle: "technologies",
+        title: "technologies",
     },
     {
         id: "projekty",
-        navbarTitle: "projects",
+        title: "projects",
     },
     {
         id: "doswiadczenie",
-        navbarTitle: "experience",
+        title: "experience",
     },
     {
         id: "kontakt",
-        navbarTitle: "contact",
+        title: "contact",
     },
 ];
 

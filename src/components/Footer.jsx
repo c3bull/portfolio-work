@@ -2,9 +2,11 @@ import {textVariant} from "../data/motion.js";
 import {motion} from "framer-motion";
 import {MdOutgoingMail, linkedin, github} from '../assets/icons.js'
 import {hexbg} from "../assets/backgrounds.js";
+import {useTranslation} from "react-i18next";
+import {navLinks} from "../data/data.js";
 
 export default function Footer() {
-
+    const {t} = useTranslation()
     return (
         <div className='border-t border-gray-600 relative'>
             <div className='bg-primary w-full min-h-[50vh] flex justify-center items-center py-10'>
@@ -18,13 +20,14 @@ export default function Footer() {
                                 initial='hidden'
                                 whileInView='show'
                                 viewport={{once: true, amount: 0.25}}>
-                                Kontakt
+                                {t("contact")}
                             </motion.p>
                             <div className='text-white flex flex-col gap-2 items-center md:items-start'>
                                 <div className='flex items-center gap-1'>
                                     <img className='w-5 h-5' src={MdOutgoingMail} alt='email'/>
                                     <p className='text-white hover:underline hover:text-white'>
-                                        <a href='mailto:jakub.cebula9@gmail.com' target='_blank'>jakub.cebula9@gmail.com</a>
+                                        <a href='mailto:jakub.cebula9@gmail.com'
+                                           target='_blank'>jakub.cebula9@gmail.com</a>
                                     </p>
                                 </div>
                                 <div className='flex items-center gap-1'>
@@ -48,19 +51,13 @@ export default function Footer() {
                                 initial='hidden'
                                 whileInView='show'
                                 viewport={{once: true, amount: 0.25}}>
-                                Sekcje
+                                {t("sections")}
                             </motion.p>
                             <div className='text-white flex flex-col gap-2'>
-                                <a href={'#strona-glowna'} className='text-white hover:underline hover:text-white'>Strona
-                                    główna</a>
-                                <a href={'#o-mnie'} className='text-white hover:underline hover:text-white'>O mnie</a>
-                                <a href={'#technologie'}
-                                   className='text-white hover:underline hover:text-white'>Technologie</a>
-                                <a href={'#projekty'}
-                                   className='text-white hover:underline hover:text-white'>Projekty</a>
-                                <a href={'#doswiadczenie'}
-                                   className='text-white hover:underline hover:text-white'>Doświadczenie</a>
-                                <a href={'#kontakt'} className='text-white hover:underline hover:text-white'>Kontakt</a>
+                                {navLinks.map((link, index) => (
+                                    <a href={`#${link.id}`}
+                                       className='text-white hover:underline hover:text-white' key={index}>{t(link.title)}</a>
+                                ))}
                             </div>
                         </div>
                     </div>

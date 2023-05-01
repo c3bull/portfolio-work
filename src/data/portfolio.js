@@ -19,7 +19,7 @@ const portfolioJson = [
         title: 'Syk Łyk Bis',
         github: 'https://github.com/c3bull/syklykbis-taw',
         demo: 'https://user-images.githubusercontent.com/80101130/224050463-6afc05dc-aaff-4fa3-a494-7cf8871583c6.gif',
-        description: "Sklep internetowy dystrybutora soków, napoi i wody",
+        description: "projectSykLykBisDecription",
         hashtags: "React.js, Node.js, JavaScript, TalwindCSS, GraphQL, MongoDB",
     },
     {
@@ -27,7 +27,7 @@ const portfolioJson = [
         image: chirper,
         title: 'Chirper',
         github: 'https://github.com/c3bull/Chirper',
-        description: "Media społecznościowe wzorowane z postami i czatem",
+        description: "projectChirperDecription",
         hashtags: "React.js, Node.js, JavaScript, MongoDB",
         demo: chirperDemo,
         contributors: [
@@ -50,7 +50,7 @@ const portfolioJson = [
         image: wywozkapp,
         title: 'Wywozkapp',
         github: 'https://github.com/c3bull/Wywozkapp',
-        description: "Aplikacja przypominająca o wywozie śmieci",
+        description: "projectWywozkappDecription",
         hashtags: "React Native, JavaScript",
         demo: wywozkappDemo,
         contributors: [
@@ -73,7 +73,7 @@ const portfolioJson = [
         image: moviesDb,
         title: 'Movies DB',
         github: 'https://github.com/c3bull/moviesDB',
-        description: "Baza filmów i seriali",
+        description: "projectMovieDbDecription",
         hashtags: "React.js, Node.js, JavaScript",
         demo: moviesDbDemo
     },
@@ -82,7 +82,7 @@ const portfolioJson = [
         image: onSteroids,
         title: 'onSteroids',
         github: 'https://github.com/c3bull/onsteroids',
-        description: "Aplikacja służąca do ustalania i zapisywania treningów na siłowni",
+        description: "projectOnSteroidsDecription",
         hashtags: "React Native, JavaScript",
         demo: onSteroidsDemo,
         contributors: [
@@ -96,7 +96,7 @@ const portfolioJson = [
         image: quiz,
         title: 'Quiz',
         github: 'https://github.com',
-        description: "Aplikacja sprawdzająca wiedzę na wszelkie tematy",
+        description: "projectQuizDecription",
         hashtags: "React Native, JavaScript",
         demo: quizDemo
     },

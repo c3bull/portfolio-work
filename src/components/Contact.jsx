@@ -6,8 +6,10 @@ import {motion} from "framer-motion";
 import linkedinImg from "../assets/projects/linkedin.png"
 import githubImg from "../assets/projects/github.png"
 import Stars from "./Stars.jsx";
+import {useTranslation} from "react-i18next";
 
 export default function Contact() {
+    const {t} = useTranslation()
     return (
         <section id='kontakt' className='h-[80vh] relative bg-primary flex flex-col items-center justify-center py-12'>
             <motion.p
@@ -17,7 +19,7 @@ export default function Contact() {
                 whileInView='show'
                 viewport={{once: true, amount: 0.25}}
             >
-                Kontakt
+                {t("contact")}
             </motion.p>
             <motion.div className='max-w-2xl flex-col gap-6 flex w-4/5 lg:w-2/3 z-10'
                  variants={fadeIn("up", "spring", 0, 1.25)}

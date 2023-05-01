@@ -4,10 +4,12 @@ import {useState} from "react";
 import ModalDemo from "./ModalDemo";
 import {motion} from "framer-motion";
 import {fadeIn} from "../data/motion.js";
+import {useTranslation} from "react-i18next";
 
 export default function ProjectTemplate({index, id, image, title, github, demo, contributors, description, hashtags}) {
     const [showModal, setShowModal] = useState(false)
     const handleOnClose = () => setShowModal(false)
+    const {t} = useTranslation()
     return (
         <motion.div
             className='p-0.5 bg-gradient-linear from-transparent to-gray-900 rounded-2xl shadow-md shadow-violet-700'
@@ -39,7 +41,7 @@ export default function ProjectTemplate({index, id, image, title, github, demo, 
                 <div className='px-4 pb-4 flex flex-col h-full'>
                     <p className='text-xl font-bold'>{title}</p>
                     <div className='flex flex-col justify-between h-full'>
-                        <p className='leading-5 text-gray-200'>{description}</p>
+                        <p className='leading-5 text-gray-200'>{t(description)}</p>
                         <p className='text-xs'>{hashtags}</p>
                     </div>
                 </div>

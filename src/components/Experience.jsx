@@ -3,8 +3,11 @@ import 'react-vertical-timeline-component/style.min.css';
 import experience from "../data/experience.js";
 import {textVariant} from "../data/motion.js";
 import {motion} from "framer-motion";
+import {useTranslation} from "react-i18next";
 
 export default function Experience() {
+
+    const {t}= useTranslation()
 
     return (
         <section id='doswiadczenie' className='bg-primary py-12'>
@@ -15,7 +18,7 @@ export default function Experience() {
                 whileInView='show'
                 viewport={{once: true, amount: 0.25}}
             >
-                Moje doświadczenie
+                {t("experience")}
             </motion.p>
             <div className='flex justify-center overflow-hidden'>
                 <div className='w-3/4 lg:w-full'>
@@ -30,7 +33,7 @@ export default function Experience() {
                                         color: '#fff'
                                     }}
                                     contentArrowStyle={{borderRight: '7px solid #111827'}}
-                                    date={item.date}
+                                    date={t(item.date)}
                                     iconStyle={{background: '#111827', color: '#fff'}}
                                     icon={
                                         <div className='flex items-center justify-center w-full h-full'>
@@ -41,10 +44,10 @@ export default function Experience() {
                                         </div>
                                     }
                                 >
-                                    <h3 className="vertical-timeline-element-title">{item.title}</h3>
-                                    <h4 className="vertical-timeline-element-subtitle">{item.subtitle}</h4>
+                                    <h3 className="vertical-timeline-element-title">{t(item.title)}</h3>
+                                    <h4 className="vertical-timeline-element-subtitle">{t(item.subtitle)}</h4>
                                     <p>
-                                        {item.description} {item.website && <a href={item.website} target='_blank'
+                                        {t(item.description)} {item.website && <a href={item.website} target='_blank'
                                                                                className='text-gray-400 hover:text-violet-700 duration-200'>{item.website}</a>}
                                     </p>
                                 </VerticalTimelineElement>

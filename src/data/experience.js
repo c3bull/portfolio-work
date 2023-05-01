@@ -3,60 +3,60 @@ import {certificate, diploma, school} from "../assets/icons.js"
 const experience = [
     {
         date: "28.03.2023",
-        title: "Tytuł inżyniera",
+        title: "engineer",
         subtitle: "ANS, Tarnów",
-        description: 'Obrona pracy inżynierskiej (temat: "Projekt i implementacja systemu symulacji interwencji policyjnych")',
+        description: "engineeringWork",
         icon: diploma
     },
     {
-        date: "18.02.2023 - obecnie",
-        title: "Kurs",
+        date: "socialMediaManagerDate",
+        title: "course",
         subtitle: "Online, Żak",
-        description: "Udział w kursie Social Media Manager, odbywający się w wybrane weekendy",
+        description: "socialMediaManagerDescription",
         website: "https://zak.edu.pl/",
         icon: school
     },
     {
         date: "4.05.2022 - 4.11.2022",
-        title: "Praktyka zawodowa",
-        subtitle: "Kraków",
-        description: "Odbywanie praktyk w firmie Awesome Industries sp. z o.o.",
+        title: "studentWorkPlacements",
+        subtitle: "cracow",
+        description: "studentWorkPlacementsDescription",
         website: "https://awesome-ind.com/",
         icon: school
     },
     {
         date: "2019-2023",
-        title: "Studia informatyczne",
-        subtitle: "Tarnów",
-        description: "Rozpoczęcie nauki w Akademii Nauk Stosowanych w Tarnowie o kierunku informatycznym ze specjalizacją inżynierii oprogramowania",
+        title: "itStudies",
+        subtitle: "tarnow",
+        description: "itStudiesDescription",
         icon: school
     },
     {
         date: "2019",
         title: "Certyfikat",
-        subtitle: "Tarnów",
-        description: "Uzyskanie certyfikatu kwalifikacji zawodowej E.14",
+        subtitle: "tarnow",
+        description: "e14",
         icon: certificate
     },
     {
         date: "2018",
         title: "Certyfikat",
-        subtitle: "Tarnów",
-        description: "Uzyskanie certyfikatu kwalifikacji zawodowej E.13",
+        subtitle: "tarnow",
+        description: "e13",
         icon: certificate
     },
     {
         date: "2017",
         title: "Certyfikat",
-        subtitle: "Tarnów",
-        description: "Uzyskanie certyfikatu kwalifikacji zawodowej E.12",
+        subtitle: "tarnow",
+        description: "e12",
         icon: certificate
     },
     {
         date: "2015 - 2019",
-        title: "Technikum informatyczne",
-        subtitle: "Tarnów",
-        description: "Rozpoczęcia nauki w Zespole Szkół Mechaniczno Elektrycznych w Tarnowie",
+        title: "itTechnicalSchool",
+        subtitle: "tarnow",
+        description: "itTechnicalSchoolDescription",
         icon: school
     },
 ]

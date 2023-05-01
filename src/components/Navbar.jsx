@@ -21,7 +21,9 @@ export default function Navbar() {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-const {t} = useTranslation()
+
+    const {t} = useTranslation()
+
     return (
         <nav
             className={`${toggle && 'bg-secondary'} hover:bg-secondary w-full flex items-center h-24 fixed top-0 z-30 border-b-2 border-b-gray-600 ${scrollTop >= 10 && 'bg-secondary/100'} duration-300`}>
@@ -36,12 +38,11 @@ const {t} = useTranslation()
                         <li key={link.id}
                             className='text-white text-[18px] font-medium cursor-pointer'>
                             <a href={`#${link.id}`}
-                               className='hover-underline-animation h-full whitespace-nowrap'>{t(link.navbarTitle)}</a>
+                               className='hover-underline-animation h-full whitespace-nowrap'>{t(link.title)}</a>
                         </li>
 
                     ))}
-                    {/*<img src={plflag} className='hover:scale-105 duration-200 cursor-pointer absolute right-10 top-0 bottom-0 my-auto w-8 h-8'/>*/}
-                    <ChangeLang/>
+                    <ChangeLang style='hover:scale-105 duration-200 cursor-pointer absolute right-10 top-0 bottom-0 my-auto w-8 h-8'/>
                 </ul>
                 <div className='px-10 uppercase lg:hidden flex flex-1 h-full justify-end items-center'>
                     <img
@@ -62,7 +63,8 @@ const {t} = useTranslation()
                                     <a href={`#${link.id}`}>{link.title}</a>
                                 </li>
                             ))}
-                            <img src={plflag} className='w-8 h-8 cursor-pointer'/>
+                                    <ChangeLang />
+
                         </ul>
                     </div>
                 </div>

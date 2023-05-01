@@ -3,15 +3,18 @@ import portfolioJson from "../data/portfolio.js";
 import {textVariant} from "../data/motion.js";
 import {motion} from "framer-motion";
 import {hexside} from "../assets/backgrounds.js";
+import {useTranslation} from "react-i18next";
 
 export default function Projects() {
+
+    const {t} = useTranslation()
     return (
         <section id='projekty' className='flex flex-col justify-center items-center w-full py-12 bg-primary relative'>
             <motion.p className='uppercase font-semibold text-white text-center text-4xl pb-16'
                       variants={textVariant(0.25)}
                       initial='hidden'
                       whileInView='show'
-                      viewport={{once: true, amount: 0.25}}>Projekty
+                      viewport={{once: true, amount: 0.25}}>{t("projects")}
             </motion.p>
             <div className='w-2/3 z-10'>
                 <div

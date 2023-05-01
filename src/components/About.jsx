@@ -6,6 +6,7 @@ import githubImg from "../assets/projects/github.png"
 import linkedinImg from "../assets/projects/linkedin.png"
 import {textVariant} from "../data/motion.js";
 import {motion} from "framer-motion";
+import {useTranslation} from "react-i18next";
 
 export default function About() {
     const [scrollTop, setScrollTop] = useState(0);
@@ -22,13 +23,15 @@ export default function About() {
         };
     }, []);
 
+    const {t} = useTranslation();
+
     return (
         <section id='o-mnie' className='h-screen lg:h-auto text-white flex flex-col justify-center items-center bg-primary w-full py-12'>
             <motion.p className='uppercase font-semibold text-center text-4xl'
                       variants={textVariant(0.25)}
                       initial='hidden'
                       whileInView='show'
-                      viewport={{once: true, amount: 0.25}}>O mnie
+                      viewport={{once: true, amount: 0.25}}>{t("about")}
             </motion.p>
             <div className='relative h-full overflow-hidden'>
                 <div
@@ -43,12 +46,7 @@ export default function About() {
                 </div>
                 <div className='z-20 opacity-70 absolute w-4/5 lg:w-1/2 top-28 md:top-36 lg:top-12 xl:top-32 2xl:top-52 p-5 left-0 right-0 mx-auto text-md md:text-lg xl:text-xl'>
                     <Typed
-                        strings={['Cześć, jestem Kuba. ' +
-                        'Pasjonuję się tworzeniem stron internetowych. ' +
-                        'Technologie, których używam to głównie React.js, Next.js, React Native, HTML, JavaScript, TailwindCSS. ' +
-                        'Dodatkowo potrafię korzystać z NodeJS, MongoDB oraz PostreSQL. ' +
-                        'Interesuje mnie również tworzenie grafik komputerowych. ' +
-                        'Do tworzenia logo i poprawania zdjęć używam Adobe Illustrator, Adobe Photoshop oraz Gimp.']}
+                        strings={[t("aboutDescription")]}
                         typeSpeed={40}
                     />
                 </div>

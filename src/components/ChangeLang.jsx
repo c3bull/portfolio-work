@@ -3,7 +3,7 @@ import i18n from "i18next";
 import {plflag, engflag} from "../assets/icons.js";
 import {useTranslation} from "react-i18next";
 
-export default function ChangeLang() {
+export default function ChangeLang({style}) {
     const [language, setLanguage] = useState(localStorage.getItem("lang") || "pl")
 
     const langChange = (e) => {
@@ -19,7 +19,7 @@ export default function ChangeLang() {
     return (
         <div className='w-12 h-12 absolute right-10 top-1 my-auto bottom-0'>
             <img onClick={langChange} src={language === "pl" ? plflag : engflag}
-                 className='hover:scale-105 duration-200 cursor-pointer absolute right-10 top-0 bottom-0 my-auto w-8 h-8'
+                 className={style}
                  alt='change language'
             />
         </div>
