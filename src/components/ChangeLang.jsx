@@ -15,10 +15,7 @@ export default function ChangeLang({style}) {
     }, [language]);
 
     useEffect(() => {
-        let localLang = language;
-        setLanguage("");
-        setLanguage(localLang)
-        // langChange()
+        langChange()
     }, [])
 
     const {t} = useTranslation()
