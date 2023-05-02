@@ -9,20 +9,16 @@ export default function ChangeLang({style}) {
         setLanguage(language === "pl" ? "en" : "pl");
     };
 
-    const langChangeFirst = (e) => {
-        {language === "pl" && setLanguage("pl")}
-        {language === "en" && setLanguage("en")}
-    };
-
     useEffect(() => {
         localStorage.setItem("lang", language);
         i18n.changeLanguage(language);
     }, [language]);
 
     useEffect(() => {
-        {
-            langChange()
-        }
+        let localLang = language;
+        setLanguage("");
+        setLanguage(localLang)
+        // langChange()
     }, [])
 
     const {t} = useTranslation()
