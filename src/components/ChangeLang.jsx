@@ -13,7 +13,6 @@ export default function ChangeLang({style}) {
         i18n.changeLanguage(language);
     }, [language]);
 
-
     const {t} = useTranslation()
     return (
         <div className='w-8 h-8 lg:w-12 lg:h-12'>
