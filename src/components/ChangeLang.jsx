@@ -21,7 +21,7 @@ export default function ChangeLang({style}) {
 
     useEffect(() => {
         {
-            langChangeFirst()
+            langChange()
         }
     }, [])
 
