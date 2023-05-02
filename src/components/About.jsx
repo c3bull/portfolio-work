@@ -10,8 +10,7 @@ import {useTranslation} from "react-i18next";
 
 export default function About() {
     const [scrollTop, setScrollTop] = useState(0);
-    // let language = localStorage.getItem("lang");
-    let language = "pl";
+    let language = localStorage.getItem("lang");
     useEffect(() => {
         const handleScroll = () => {
             setScrollTop(window.scrollY);
