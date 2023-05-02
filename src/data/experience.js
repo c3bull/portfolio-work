@@ -33,21 +33,21 @@ const experience = [
     },
     {
         date: "2019",
-        title: "Certyfikat",
+        title: "certificate",
         subtitle: "tarnow",
         description: "e14",
         icon: certificate
     },
     {
         date: "2018",
-        title: "Certyfikat",
+        title: "certificate",
         subtitle: "tarnow",
         description: "e13",
         icon: certificate
     },
     {
         date: "2017",
-        title: "Certyfikat",
+        title: "certificate",
         subtitle: "tarnow",
         description: "e12",
         icon: certificate

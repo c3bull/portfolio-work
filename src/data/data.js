@@ -109,6 +109,10 @@ const navLinks = [
         id: "kontakt",
         title: "contact",
     },
+    {
+        id: "jezyk",
+        language: "language"
+    },
 ];
 
 export {stackFrontend, stackBackend, stackGraphics, navLinks}

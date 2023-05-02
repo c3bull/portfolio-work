@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import {navLinks} from "../data/data.js"
-import {menu, close, plflag} from '../assets/icons.js'
+import {menu, close} from '../assets/icons.js'
 import useReadingProgress from "../data/useReadingProgress.js";
 import ChangeLang from "./ChangeLang";
 import {useTranslation} from "react-i18next";
@@ -30,19 +30,16 @@ export default function Navbar() {
             <div className='w-full flex justify-between items-center h-full lg:pt-9 max-w-7xl mx-auto'>
                 <ul className='list-none hidden lg:flex flex-row gap-7 lg:gap-10 justify-center h-full w-full'>
                     {navLinks.map((link) => (
-                        // <li key={link.id}
-                        //     className='text-white text-[18px] font-medium cursor-pointer'>
-                        //     <a href={`#${link.id}`}
-                        //        className='hover-underline-animation h-full whitespace-nowrap'>{link.title}</a>
-                        // </li>
                         <li key={link.id}
                             className='text-white text-[18px] font-medium cursor-pointer'>
                             <a href={`#${link.id}`}
                                className='hover-underline-animation h-full whitespace-nowrap'>{t(link.title)}</a>
+                            {link.language && <ChangeLang
+                                style='hover:scale-105 duration-200 cursor-pointer absolute right-10 top-0 bottom-0 my-auto w-8 h-8'/>}
                         </li>
 
                     ))}
-                    <ChangeLang style='hover:scale-105 duration-200 cursor-pointer absolute right-10 top-0 bottom-0 my-auto w-8 h-8'/>
+
                 </ul>
                 <div className='px-10 uppercase lg:hidden flex flex-1 h-full justify-end items-center'>
                     <img
@@ -56,15 +53,15 @@ export default function Navbar() {
                         <ul className='w-screen list-none flex justify-end items-center flex-col gap-4'>
                             {navLinks.map((link) => (
                                 <li key={link.id}
-                                    className='w-full text-center text-white font-poppins font-medium cursor-pointer text-[16px]'
+                                    className='flex justify-center w-full text-center text-white font-poppins font-medium cursor-pointer text-[16px]'
                                     onClick={() => {
                                         setToggle(!toggle)
                                     }}>
-                                    <a href={`#${link.id}`}>{link.title}</a>
+                                    <a href={`#${link.id}`}>{t(link.title)}</a>
+                                    {link.language && <ChangeLang
+                                        style='cursor-pointer'/> }
                                 </li>
                             ))}
-                                    <ChangeLang />
-
                         </ul>
                     </div>
                 </div>
