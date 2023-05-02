@@ -9,7 +9,7 @@ export default function Navbar() {
     const [toggle, setToggle] = useState(false)
     const [scrollTop, setScrollTop] = useState(0);
     const completion = useReadingProgress()
-
+    const [language, setLanguage] = useState(localStorage.getItem("lang"))
     useEffect(() => {
         const handleScroll = () => {
             setScrollTop(window.scrollY);
@@ -21,6 +21,10 @@ export default function Navbar() {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    useEffect(() => {
+        setLanguage(localStorage.getItem("lang"));
+    }, [])
 
     const {t} = useTranslation()
 
@@ -59,7 +63,7 @@ export default function Navbar() {
                                     }}>
                                     <a href={`#${link.id}`}>{t(link.title)}</a>
                                     {link.language && <ChangeLang
-                                        style='cursor-pointer'/> }
+                                        style='cursor-pointer'/>}
                                 </li>
                             ))}
                         </ul>
