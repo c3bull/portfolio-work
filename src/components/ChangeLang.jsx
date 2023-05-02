@@ -4,12 +4,17 @@ import {plflag, engflag} from "../assets/icons.js";
 import {useTranslation} from "react-i18next";
 
 export default function ChangeLang({style}) {
-    const [language, setLanguage] = useState(localStorage.getItem("lang") || "pl")
+    // const [language, setLanguage] = useState(localStorage.getItem("lang") || "pl")
+    const [language, setLanguage] = useState("pl")
     const langChange = (e) => {
         setLanguage(language === "pl" ? "en" : "pl");
     };
+
+    // useEffect(() => {
+    //     localStorage.setItem("lang", language);
+    //     i18n.changeLanguage(language);
+    // }, [language]);
     useEffect(() => {
-        localStorage.setItem("lang", language);
         i18n.changeLanguage(language);
     }, [language]);
 

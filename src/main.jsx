@@ -7,10 +7,10 @@ import {I18nextProvider} from "react-i18next";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <I18nextProvider i18n={i18n} defaultNS={'translation'}>
-            <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div>Loading...</div>}>
+            <I18nextProvider i18n={i18n} defaultNS={'translation'}>
                 <App/>
-            </Suspense>
-        </I18nextProvider>
+            </I18nextProvider>
+        </Suspense>
     </React.StrictMode>,
 )
