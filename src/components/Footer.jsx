@@ -1,6 +1,6 @@
 import {textVariant} from "../data/motion.js";
 import {motion} from "framer-motion";
-import {MdOutgoingMail, linkedin, github} from '../assets/icons.js'
+import {MdOutgoingMail, lin, gith} from '../assets/icons.js'
 import {hexbg} from "../assets/backgrounds.js";
 import {useTranslation} from "react-i18next";
 import {navLinks} from "../data/data.js";
@@ -31,13 +31,13 @@ export default function Footer() {
                                     </p>
                                 </div>
                                 <div className='flex items-center gap-1'>
-                                    <img className='w-5 h-5' src={linkedin} alt='email'/>
+                                    <img className='w-5 h-5 mb-1' src={lin} alt='email'/>
                                     <p className='text-white hover:underline hover:text-white'>
                                         <a href='https://www.linkedin.com/in/cebula-jakub/' target='_blank'>LinkedIn</a>
                                     </p>
                                 </div>
                                 <div className='flex items-center gap-1'>
-                                    <img className='w-5 h-5 bg-white rounded-full p-0.5' src={github} alt='email'/>
+                                    <img className='w-5 h-5 mb-0.5' src={gith} alt='email'/>
                                     <p className='text-white hover:underline hover:text-white'>
                                         <a href='https://github.com/c3bull' target='_blank'>Github</a>
                                     </p>

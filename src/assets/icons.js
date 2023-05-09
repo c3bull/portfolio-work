@@ -4,7 +4,9 @@ import school from "./school.png";
 import MdOutgoingMail from "./icons/MdOutgoingMail.png";
 import steam from "./icons/steam.png";
 import linkedin from "./projects/linkedin.png";
+import lin from "./lin.png";
 import github from "./projects/github.png";
+import gith from "./gith.png";
 import close from '../assets/icons/close.svg'
 import menu from '../assets/icons/menu.svg'
 import spinner from '../assets/icons/spinner.png'
@@ -23,4 +25,6 @@ export {
     spinner,
     plflag,
     engflag,
+    lin,
+    gith,
 }

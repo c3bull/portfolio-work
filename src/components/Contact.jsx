@@ -3,8 +3,7 @@ import React from 'react';
 import {MdOutgoingMail} from '../assets/icons.js'
 import {fadeIn, textVariant} from "../data/motion.js";
 import {motion} from "framer-motion";
-import linkedinImg from "../assets/projects/linkedin.png"
-import githubImg from "../assets/projects/github.png"
+import {lin, gith} from '../assets/icons.js'
 import Stars from "./Stars.jsx";
 import {useTranslation} from "react-i18next";
 
@@ -51,7 +50,7 @@ export default function Contact() {
                     icon={<div className='flex items-center p-0.5'>
                         <img
                             className='rounded-full w-12 h-12 lg:h-10 lg:w-10'
-                            src={linkedinImg}
+                            src={lin}
                             alt='zadzwoń'
                         />
                     </div>}
@@ -63,8 +62,8 @@ export default function Contact() {
                     link='/c3bull'
                     icon={<div className='flex items-center p-0.5'>
                         <img
-                            className='bg-white rounded-full p-0.5 w-12 h-12 lg:h-10 lg:w-10'
-                            src={githubImg}
+                            className='w-12 h-12 lg:h-10 lg:w-10'
+                            src={gith}
                             alt='zadzwoń'
                         />
                     </div>}

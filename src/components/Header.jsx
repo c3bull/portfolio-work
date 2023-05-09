@@ -19,7 +19,7 @@ export default function Header() {
                                 Jakub Cebula
                             </motion.p>
                             <motion.p
-                                className='text-center font-extrabold text-transparent text-5xl md:text-6xl lg:text-7xl bg-clip-text bg-gradient-to-t to-violet-700 from-blue-500 lg:bg-gradient-to-r'
+                                className='text-center font-extrabold text-transparent text-5xl md:text-6xl lg:text-7xl bg-clip-text bg-gradient-to-t from-violet-400 to-violet-700 lg:bg-gradient-to-r'
                                 variants={textVariant()}
                                 initial='hidden'
                                 whileInView='show'

@@ -7,6 +7,7 @@ import linkedinImg from "../assets/projects/linkedin.png"
 import {textVariant} from "../data/motion.js";
 import {motion} from "framer-motion";
 import {useTranslation} from "react-i18next";
+import {lin, gith} from '../assets/icons.js'
 
 export default function About() {
     const [scrollTop, setScrollTop] = useState(0);
@@ -24,7 +25,7 @@ export default function About() {
     }, []);
 
     const {t} = useTranslation();
-    
+
     return (
         <section id='o-mnie'
                  className='h-screen lg:h-auto text-white flex flex-col justify-center items-center bg-primary w-full py-12'>
@@ -38,7 +39,7 @@ export default function About() {
                 <div
                     className='absolute w-full h-full z-10 bg-gradient-linear from-[#0b0d0f] via-transparent to-[#0b0d0f]'/>
                 <img src={aboutmeimg} alt="bgimg"
-                     className={`relative h-full w-auto lg:w-screen object-cover top-0 left-0 ${scrollTop >= 650 ? 'opacity-100' : 'opacity-30'} duration-200`}
+                     className={`relative h-full w-auto lg:w-screen object-cover top-0 left-0 ${scrollTop >= 650 ? 'opacity-100' : 'opacity-30 grayscale'} duration-200`}
                 />
                 <div
                     className='overflow-hidden flex justify-around w-full top-2 lg:top-10 left-0 right-0 mx-auto absolute z-20'>
@@ -66,9 +67,12 @@ export default function About() {
                             <img src={githubImg} alt='github'/>
                         </a>
                     </div>
-                    <div className='bg-white p-0.5 rounded-xl w-24 h-24 xl:w-32 xl:h-32 hover:opacity-70 duration-200'>
+                    <div
+                        className='bg-white p-0.5 rounded-full w-24 h-24 xl:w-32 xl:h-32 hover:opacity-70 duration-200'>
                         <a href="https://www.linkedin.com/in/cebula-jakub/" target="_blank">
-                            <img src={linkedinImg} alt='github'/>
+                            <div className='p-1 bg-[#1b1f23] rounded-full'>
+                                <img src={lin} alt='github'/>
+                            </div>
                         </a>
                     </div>
                 </div>
