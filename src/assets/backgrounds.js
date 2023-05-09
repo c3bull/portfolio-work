@@ -7,6 +7,7 @@ import jsbg from "./stackbgs/jsbg.png";
 import tsbg from "./stackbgs/tsbg.png";
 import graphqlbg from "./stackbgs/graphqlbg.png";
 import nodejsbg from "./stackbgs/nodejsbg.png";
+import javabg from "./stackbgs/javabg.png";
 import mongodbbg from "./stackbgs/mongodbbg.png";
 import posgrebg from "./stackbgs/posgrebg.png";
 import adobeilbg from "./stackbgs/adobeilbg.png";
@@ -28,6 +29,7 @@ export {
     tsbg,
     graphqlbg,
     nodejsbg,
+    javabg,
     mongodbbg,
     posgrebg,
     adobeilbg,

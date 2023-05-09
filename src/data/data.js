@@ -1,4 +1,4 @@
-import {reactbg, nextjsbg, tailwindbg, cssbg, htmlbg, jsbg, tsbg, graphqlbg, nodejsbg, mongodbbg, posgrebg, adobeilbg, photoshopbg, gimpbg} from "../assets/backgrounds.js"
+import {reactbg, nextjsbg, tailwindbg, cssbg, htmlbg, jsbg, tsbg, graphqlbg, nodejsbg, mongodbbg, posgrebg, adobeilbg, photoshopbg, gimpbg, javabg} from "../assets/backgrounds.js"
 
 const stackFrontend = [
     {
@@ -51,6 +51,10 @@ const stackBackend = [
             {
                 name: "NodeJS",
                 backgroundImg: nodejsbg,
+            },
+            {
+                name: "Java",
+                backgroundImg: javabg,
             },
             {
                 name: "MongoDB",
