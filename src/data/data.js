@@ -1,4 +1,4 @@
-import {reactbg, nextjsbg, tailwindbg, cssbg, htmlbg, jsbg, tsbg, graphqlbg, nodejsbg, mongodbbg, posgrebg, adobeilbg, photoshopbg, gimpbg, javabg} from "../assets/backgrounds.js"
+import {reactbg, nextjsbg, tailwindbg, cssbg, htmlbg, jsbg, tsbg, graphqlbg, nodejsbg, mongodbbg, posgrebg, adobeilbg, photoshopbg, javabg, gimpbg} from "../assets/backgrounds.js"
 
 const stackFrontend = [
     {
