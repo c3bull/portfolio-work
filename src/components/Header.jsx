@@ -35,8 +35,8 @@ export default function Header() {
                     </div>
                 </div>
                 <div
-                    className='w-full h-screen background-animate bg-gradient-linear from-primary via-violet-700/10 to-primary absolute top-0 left-0 overflow-hidden'>
-                    <img src={hexbg} alt='threehex' className='max-w-none'/>
+                    className='w-full h-screen background-animate bg-gradient-linear from-primary via-violet-700/20 to-primary absolute top-0 left-0 overflow-hidden'>
+                    <img src={hexbg} alt='threehex' className='h-full max-w-none'/>
                 </div>
             </div>
         </section>

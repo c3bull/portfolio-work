@@ -26,8 +26,7 @@ export default function Contact() {
                  whileInView='show'
                  viewport={{once: true, amount: 0.25}}>
                 <p className='md:hidden text-center font-medium uppercase text-white'>
-                    Kliknij na odpowiednią ikonę, aby przejść do interesującej cię formy
-                    kontaktu.
+                    {t("contactHint")}
                 </p>
 
                 <ContactWays

@@ -44,6 +44,7 @@ i18n.use(initReactI18next).init({
                 itTechnicalSchool: "IT technical school",
                 itTechnicalSchoolDescription: "Technical Secondary School in IT - Zespół Szkół Mechaniczno Elektrycznych w Tarnowie",
                 sections: "Sections",
+                contactHint: "Click on the icon to go to the way of contact you are interested in."
             }
         },
         pl: {
@@ -86,6 +87,7 @@ i18n.use(initReactI18next).init({
                 itTechnicalSchool: "Technikum informatyczne",
                 itTechnicalSchoolDescription: "Technikum o kierunku informatycznym - Zespół Szkół Mechaniczno Elektrycznych w Tarnowie",
                 sections: "Sekcje",
+                contactHint: "Kliknij ikonę, aby przejść do interesującej Cię formy kontaktu."
             }
         },
     },
