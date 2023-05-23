@@ -70,7 +70,7 @@ export default function Contact() {
                 />
                 <ContactWays
                     href='tel:792645726'
-                    title='Telefon'
+                    title={t('phone')}
                     phone='792 645 726'
                     icon={<div className='flex items-center p-0.5'>
                         <img
