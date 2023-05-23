@@ -3,7 +3,7 @@ import React from 'react';
 import {MdOutgoingMail} from '../assets/icons.js'
 import {fadeIn, textVariant} from "../data/motion.js";
 import {motion} from "framer-motion";
-import {lin, gith} from '../assets/icons.js'
+import {lin, gith, phone} from '../assets/icons.js'
 import Stars from "./Stars.jsx";
 import {useTranslation} from "react-i18next";
 
@@ -32,7 +32,7 @@ export default function Contact() {
                 <ContactWays
                     href='mailto:jakub.cebula9@gmail.com'
                     title='Email'
-                    name='jakub.cebula9@gmail.com'
+                    email='jakub.cebula9@gmail.com'
                     icon={<div className='flex items-center p-0.5'>
                         <img
                             className='w-12 h-12 lg:h-10 lg:w-10 p-0.5'
@@ -50,7 +50,7 @@ export default function Contact() {
                         <img
                             className='rounded-full w-12 h-12 lg:h-10 lg:w-10'
                             src={lin}
-                            alt='zadzwoń'
+                            alt='linkedin'
                         />
                     </div>}
                     target='_blank'
@@ -63,6 +63,19 @@ export default function Contact() {
                         <img
                             className='w-12 h-12 lg:h-10 lg:w-10'
                             src={gith}
+                            alt='github'
+                        />
+                    </div>}
+                    target='_blank'
+                />
+                <ContactWays
+                    href='tel:792645726'
+                    title='Telefon'
+                    phone='792 645 726'
+                    icon={<div className='flex items-center p-0.5'>
+                        <img
+                            className='w-12 h-12 lg:h-10 lg:w-10'
+                            src={phone}
                             alt='zadzwoń'
                         />
                     </div>}

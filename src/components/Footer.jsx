@@ -1,6 +1,6 @@
 import {textVariant} from "../data/motion.js";
 import {motion} from "framer-motion";
-import {MdOutgoingMail, lin, gith} from '../assets/icons.js'
+import {MdOutgoingMail, lin, gith, phone} from '../assets/icons.js'
 import {hexbg} from "../assets/backgrounds.js";
 import {useTranslation} from "react-i18next";
 import {navLinks} from "../data/data.js";
@@ -40,6 +40,12 @@ export default function Footer() {
                                     <img className='w-5 h-5 mb-0.5' src={gith} alt='email'/>
                                     <p className='text-white hover:underline hover:text-white'>
                                         <a href='https://github.com/c3bull' target='_blank'>Github</a>
+                                    </p>
+                                </div>
+                                <div className='flex items-center gap-1'>
+                                    <img className='w-5 h-5 mb-0.5' src={phone} alt='email'/>
+                                    <p className='text-white hover:underline hover:text-white'>
+                                        <a href='tel:792645726'>792 645 726</a>
                                     </p>
                                 </div>
                             </div>

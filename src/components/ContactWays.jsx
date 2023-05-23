@@ -1,4 +1,4 @@
-export default function ContactWays({href, name, title, icon, name2, target, link}) {
+export default function ContactWays({href, email, title, icon, target, link, phone}) {
     return (
         <article
             className="flex items-center justify-center md:justify-start rounded-full border-y border-r border-primary bg-gradient-to-r from-primary via-gray-900
@@ -14,10 +14,14 @@ export default function ContactWays({href, name, title, icon, name2, target, lin
             </a>
             <div className="hidden md:flex w-2/3 md:w-3/4 flex-col text-white">
                 <h4 className="px-2 font-semibold uppercase">{title}</h4>
-                <h5 className="px-2 font-medium text-sm">{name}</h5>
-                <h5 className="px-2 font-medium text-sm">{name2}</h5>
+                {email && <div>
+                    <a href={href} className="px-2 font-medium text-sm">{email}</a>
+                </div>}
                 {link && <div>
                     <a href={href} target='_blank' className="px-2 font-medium text-sm">{link}</a>
+                </div>}
+                {phone && <div>
+                    <a href={href} target='_blank' className="px-2 font-medium text-sm">{phone}</a>
                 </div>}
             </div>
         </article>

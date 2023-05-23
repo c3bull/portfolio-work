@@ -12,6 +12,7 @@ import menu from '../assets/icons/menu.svg'
 import spinner from '../assets/icons/spinner.png'
 import plflag from '../assets/icons/polish-flag.png'
 import engflag from '../assets/icons/english-flag.png'
+import phone from '../assets/icons/phone.png'
 export {
     certificate,
     diploma,
@@ -27,4 +28,5 @@ export {
     engflag,
     lin,
     gith,
+    phone,
 }
