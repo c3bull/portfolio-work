@@ -10,7 +10,7 @@ import {useTranslation} from "react-i18next";
 export default function Contact() {
     const {t} = useTranslation()
     return (
-        <section id='kontakt' className='h-[80vh] relative bg-primary flex flex-col items-center justify-center py-12'>
+        <section id='kontakt' className='min-h-[80vh] relative bg-primary flex flex-col items-center justify-center py-12'>
             <motion.p
                 className='uppercase font-semibold text-center text-4xl text-white pb-10'
                 variants={textVariant(0.25)}
