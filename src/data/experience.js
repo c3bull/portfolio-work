@@ -10,7 +10,7 @@ const experience = [
     },
     {
         date: "socialMediaManagerDate",
-        title: "course",
+        title: "school",
         subtitle: "Online, Żak",
         description: "socialMediaManagerDescription",
         website: "https://zak.edu.pl/",
