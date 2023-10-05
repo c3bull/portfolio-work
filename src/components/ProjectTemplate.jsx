@@ -7,15 +7,37 @@ import {motion} from "framer-motion";
 import {fadeIn} from "../data/motion.js";
 import {useTranslation} from "react-i18next";
 
-export default function ProjectTemplate({index, id, image, title, github, demo, contributors, description, hashtags, googlePlay}) {
+export default function ProjectTemplate({
+                                            index,
+                                            id,
+                                            image,
+                                            title,
+                                            github,
+                                            demo,
+                                            contributors,
+                                            description,
+                                            hashtags,
+                                            googlePlay
+                                        }) {
     const [showModal, setShowModal] = useState(false)
     const handleOnClose = () => setShowModal(false)
     const {t} = useTranslation()
+
+    const transitionFun = (index) => {
+        if (index < 3) {
+            return index * 0.2
+        } else if (index >= 3 && index <= 5) {
+            return index * 0.2 - 0.6
+        } else if (index >= 6 && index <= 9) {
+            return index * 0.2 - 1.2
+        }
+    };
+
     return (
         <motion.div
             className='p-0.5 bg-gradient-linear from-transparent to-gray-900 rounded-2xl shadow-md shadow-violet-700'
             variants={window.matchMedia('(min-width: 1024px)').matches ?
-                fadeIn("right", "spring", (index < 3 ? index * 0.2 : index * 0.2 - 0.6), 1.25) :
+                fadeIn("right", "spring", transitionFun(index), 1.25) :
                 fadeIn("right", "spring", 0, 1.25)
             }
             initial='hidden'
