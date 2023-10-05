@@ -25,6 +25,7 @@ export default function Projects() {
                                             title,
                                             github,
                                             demo,
+                                            googlePlay,
                                             contributors,
                                             description,
                                             hashtags
@@ -37,6 +38,7 @@ export default function Projects() {
                             id={id}
                             contributors={contributors}
                             github={github}
+                            googlePlay={googlePlay}
                             description={description}
                             hashtags={hashtags}
                             image={image}/>
@@ -44,11 +46,11 @@ export default function Projects() {
                 </div>
             </div>
             <div
-                className='hidden background-animate bg-gradient-radial from-violet-700/30 to-primary to-60% md:block absolute top-0 right-0 scale-75 lg:scale-100'>
+                className='hidden  bg-gradient-radial from-violet-700/30 to-primary to-60% md:block absolute top-0 right-0 scale-75 bot lg:scale-100'>
                 <img src={hexside} alt='threehex'/>
             </div>
             <div
-                className='hidden background-animate bg-gradient-radial from-violet-700/30 to-primary to-60% md:block absolute top-0 left-0 scale-75 lg:scale-100'>
+                className='hidden  bg-gradient-radial from-violet-700/30 to-primary to-60% md:block absolute top-0 left-0 scale-75 lg:scale-100'>
                 <img src={hexside} alt='threehex'/>
             </div>
         </section>

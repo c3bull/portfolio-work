@@ -21,6 +21,7 @@ i18n.use(initReactI18next).init({
                     'I am interested in Graphics as well. ' +
                     'I use Adobe Illustrator, Adobe Photoshop and Gimp to create logos and correct photos.',
                 projectSykLykBisDecription: "Online store of a distributor of juices, drinks and water",
+                projectTactiCSDecription: "Mobile app that helps Counter Strike players create their own tactics and have fun with Strats Roulette",
                 projectChirperDecription: "Social media website with posts and chat",
                 projectWywozkappDecription: "Garbage collection reminder app",
                 projectMovieDbDecription: "Database of movies and series",
@@ -65,7 +66,7 @@ i18n.use(initReactI18next).init({
                     'Dodatkowo potrafię korzystać z NodeJS, MongoDB oraz PostreSQL. ' +
                     'Interesuje mnie również tworzenie grafik komputerowych. ' +
                     'Do tworzenia logo i poprawania zdjęć używam Adobe Illustrator, Adobe Photoshop oraz Gimp.',
-                projectSykLykBisDecription: "Sklep internetowy dystrybutora soków, napoi i wody",
+                projectTactiCSDecription: "Aplikacja pomagająca graczom Counter Strike tworzyć własne taktyki i bawić się losowymi zabawnymi taktykami",
                 projectChirperDecription: "Media społecznościowe z postami i czatem",
                 projectWywozkappDecription: "Aplikacja przypominająca o wywozie śmieci",
                 projectMovieDbDecription: "Baza filmów i seriali",

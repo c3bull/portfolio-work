@@ -10,6 +10,8 @@ import sendCastle from "./projects/portfolio5.jpg"
 import quiz from "./projects/portfolio6.jpg"
 import quizDemo from "./projects/portfolio6-demo.png"
 import syklykbis from "./projects/portfolio7.jpg"
+import tactics from "./projects/portfolio8.jpg"
+import tacticsDemo from "./projects/portfolio8-demo.png"
 
 export {
     chirper,
@@ -24,4 +26,6 @@ export {
     quiz,
     quizDemo,
     syklykbis,
+    tactics,
+    tacticsDemo,
 }

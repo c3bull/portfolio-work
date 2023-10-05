@@ -1,12 +1,13 @@
 import githubImg from "../assets/projects/github.png"
 import eyeImg from "../assets/projects/eye.png"
+import googleplayImg from "../assets/projects/googleplay.png"
 import {useState} from "react";
 import ModalDemo from "./ModalDemo";
 import {motion} from "framer-motion";
 import {fadeIn} from "../data/motion.js";
 import {useTranslation} from "react-i18next";
 
-export default function ProjectTemplate({index, id, image, title, github, demo, contributors, description, hashtags}) {
+export default function ProjectTemplate({index, id, image, title, github, demo, contributors, description, hashtags, googlePlay}) {
     const [showModal, setShowModal] = useState(false)
     const handleOnClose = () => setShowModal(false)
     const {t} = useTranslation()
@@ -34,9 +35,15 @@ export default function ProjectTemplate({index, id, image, title, github, demo, 
                         </a>
                     </div>
                     <div onClick={() => setShowModal(true)}
-                         className='hover:scale-110 duration-200 cursor-pointer bg-white p-0.5 rounded-full absolute w-8 h-8 top-0 right-9 m-5'>
+                         className='hover:scale-110 duration-200 cursor-pointer bg-white p-0.5 rounded-full absolute w-8 h-8 top-0 right-10 m-5'>
                         <img src={eyeImg} alt='github'/>
                     </div>
+                    {googlePlay && <div
+                        className='hover:scale-110 duration-200 bg-white rounded-full absolute w-8 h-8 top-0 right-20 m-5 p-0.5'>
+                        <a href={googlePlay} target="_blank">
+                            <img src={googleplayImg} alt='Google Play'/>
+                        </a>
+                    </div>}
                 </div>
                 <div className='px-4 pb-4 flex flex-col h-full'>
                     <p className='text-xl font-bold'>{title}</p>

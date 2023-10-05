@@ -10,9 +10,21 @@ import {
     quiz,
     quizDemo,
     syklykbis,
+    tactics,
+    tacticsDemo
 } from "../assets/portfolioImages.js"
 
 const portfolioJson = [
+    {
+        id: 6,
+        image: tactics,
+        title: 'Tacti CS',
+        github: 'https://github.com/c3bull/tactics',
+        demo: tacticsDemo,
+        description: "projectTactiCSDecription",
+        googlePlay: "https://play.google.com/store/apps/details?id=com.c3bull.tactics",
+        hashtags: "React Native, JavaScript, Android",
+    },
     {
         id: 0,
         image: syklykbis,
