@@ -1,5 +1,6 @@
 import certificate from "./certificate.png";
 import diploma from "./diploma.png";
+import job from "./job.png";
 import school from "./school.png";
 import MdOutgoingMail from "./icons/MdOutgoingMail.png";
 import steam from "./icons/steam.png";
@@ -15,6 +16,7 @@ import engflag from '../assets/icons/english-flag.png'
 import phone from '../assets/icons/phone.png'
 export {
     certificate,
+    job,
     diploma,
     school,
     MdOutgoingMail,

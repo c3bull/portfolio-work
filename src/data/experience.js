@@ -1,6 +1,14 @@
-import {certificate, diploma, school} from "../assets/icons.js"
+import {certificate, diploma, school, job} from "../assets/icons.js"
 
 const experience = [
+    {
+        date: "hiresDate",
+        title: "job",
+        subtitle: "hiresSubtitle",
+        description: "hiresJobDescription",
+        website: "https://wehires.com/",
+        icon: job
+    },
     {
         date: "28.03.2023",
         title: "engineer",

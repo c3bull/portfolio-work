@@ -67,7 +67,7 @@ export default function Footer() {
                             </div>
                         </div>
                     </div>
-                    <p className='pt-10 text-gray-500 text-center lg:text-start'>© Jakub Cebula • 2023</p>
+                    <p className='pt-10 text-gray-500 text-center lg:text-start'>© Jakub Cebula • 2024</p>
                 </div>
                 <div
                     className='w-full h-full bg-gradient-linear from-primary  to-violet-700/5 absolute top-0 left-0 overflow-hidden'>
