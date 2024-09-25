@@ -24,7 +24,7 @@ export default function Header() {
                                 initial='hidden'
                                 whileInView='show'
                                 viewport={{once: true, amount: 0.25}}>
-                                Junior Frontend Developer
+                                Frontend Developer
                             </motion.p>
                         </div>
                         <img
